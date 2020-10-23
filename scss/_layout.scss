@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu {
+    display: block;
+    order: 1;
+}
+
+.header {
+    order: 2;
+}
+
+.services {
+    order: 3;
+}
+
+.about {
+    order: 4;
+}
+
+.track {
+    order: 5;
+}
