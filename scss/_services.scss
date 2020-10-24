@@ -5,21 +5,107 @@
     background-position: center;
     background-position-y: 10vh;
 
-
     &__title {
-        margin: 10vh 0;
+        margin: 6vh 0 6rem 0;
         font-weight: 700;
         text-align: center;
         text-transform: uppercase;
+        font-weight: 400;
         color: $main-color;
         width: 100vw;
         line-height: 1.2em;
+        font-size: 3.2em;
+    }
+}
 
-        &-slim {
-            display: block;
-            font-weight: 500;
-            color: #000;
+.feature {
+    @include flex(center, center, column);
+    flex-wrap: wrap;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    position: relative;
+    background-color: $light-color;
+    height: 300px;
+    flex-basis: 25%;
+    margin: 2rem auto;
 
+
+    &__wrap {
+        @include flex(space-around, center, row);
+        flex-wrap: wrap;
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    &__icon {
+        margin: 3rem auto 0 auto;
+        color: $main-color;
+        font-size: 8rem;
+    }
+
+    &__title {
+        margin: 2rem auto 0 auto;
+        font-weight: 600;
+
+    }
+
+    &__info {
+        margin: 2rem 3rem;
+        text-align: center;
+    }
+
+}
+
+.offer {
+    &__section {}
+
+    &__heading {
+        height: 20%;
+        width: 100%;
+        background-color: $light-color;
+        text-align: center;
+    }
+
+    &__item {
+        &-wrap {
+            @include flex(space-around, center, row);
+            flex-wrap: wrap;
+            width: 80vw;
+            margin: 0 auto;
+        }
+
+        @include flex(space-around, center, column);
+        flex-wrap: wrap;
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        position: relative;
+        height: 300px;
+        flex-basis: 25%;
+        margin: 2rem auto;
+    }
+
+
+    &__order {
+        text-transform: lowercase;
+        padding: 0.8em;
+        width: 30rem;
+        color: #fff;
+        color: #fff;
+        background-color: $main-color;
+
+        // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        &:hover {
+            background-color: darken($main-color, 10%);
+            cursor: pointer;
+        }
+
+        @include mq(medium) {
+            padding: 0.8em;
+            font-size: 1.2rem;
+        }
+
+        @include mq(large) {
+            font-size: 1.6rem;
         }
     }
 }

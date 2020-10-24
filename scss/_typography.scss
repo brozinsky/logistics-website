@@ -12,7 +12,15 @@ h1 {
 
 h2 {
     font-size: 2.3rem;
+}
 
+h3 {
+    font-size: 2.0rem;
+}
+
+
+h4 {
+    font-size: 1.8rem;
 }
 
 span {
@@ -27,4 +35,15 @@ p {
 
 button {
     border: none;
+}
+
+input,
+textarea {
+    border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 1.2em;
+}
+
+textarea {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
 }

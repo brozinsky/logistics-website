@@ -164,16 +164,11 @@
         @include mq(large) {
             font-size: 3.6rem;
         }
-
-
     }
 
     &__input {
-        padding: 1.2em;
         border-radius: 50px 0 0 50px;
         width: 15rem;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-        border: none;
         margin-bottom: 10rem;
 
         @include mq(medium) {
@@ -186,9 +181,7 @@
         @include mq(large) {
             width: 35rem;
             font-size: 1.6rem;
-
         }
-
     }
 
     &__button {
@@ -214,10 +207,111 @@
 }
 
 
-.form-wrap {
-    display: flex;
-    margin: 0 auto;
-    width: 100vw;
-    justify-content: center;
+.contact {
 
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        position: relative;
+        height: 400px;
+        flex-basis: 25%;
+        margin: 2rem auto;
+    }
+
+    &__container {
+        font-size: 1.8rem;
+        padding: 1rem;
+
+        &:focus {
+            outline: 2px solid $main-color;
+            box-shadow: 10px;
+        }
+
+        @include mq(small) {
+            width: 40%;
+            margin: auto 2rem;
+        }
+
+        &-message {
+            box-sizing: border-box;
+            min-width: 90%;
+            font-size: 1.8rem;
+            padding: 1rem;
+            line-height: 2.6rem;
+            margin-top: 2rem;
+            margin: 2rem 3rem;
+
+            &:focus {
+                outline: 2px solid $main-color;
+                box-shadow: 10px;
+            }
+
+        }
+    }
+
+    &__form {
+        @include flex(center, center, row);
+        flex-wrap: wrap;
+
+        @include mq(small) {
+            flex-direction: row;
+        }
+
+        &-wrap {
+            width: 65%;
+        }
+
+
+    }
+
+    &__title {
+        margin: 3rem auto;
+    }
+
+    &__phone {
+        margin-top: 2.8rem;
+    }
+
+    &__address {
+        margin: 2rem auto 0 auto;
+
+        &-info {
+            margin: 1.4rem auto;
+        }
+    }
+
+    &__submit {
+        padding: 0.8em;
+        color: #fff;
+        border: 1px solid #000;
+        color: #fff;
+        background-color: #000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+
+        @include mq(medium) {
+            width: 10rem;
+            padding: 0.8em;
+            font-size: 1.2rem;
+        }
+
+        @include mq(large) {
+            width: 15rem;
+            font-size: 1.6rem;
+        }
+
+    }
+}
+
+.copyright {
+    position: fixed;
+    color: #fff;
+    bottom: 0;
+    background-color: #000;
+    width: 100vw;
+    font-size: 1.2rem;
+    text-align: center;
+    z-index: 1;
+    padding: 0.3rem;
 }

@@ -35,3 +35,12 @@ $breakpoints: (small: (min-width: 576px),
         @error '"#{$breakpoint}" - error'
     }
 }
+
+;
+
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
