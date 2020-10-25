@@ -1,213 +1,8 @@
-.about {
-    @include mq(medium) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    @include mq(large) {
-        width: 80vw;
-    }
-
-    // background-image: url('/svg/dots-light.svg');
-    // background-position: center;
-    // background-size: 50%;
-    // background-position-y: -90vw;
-    // background-repeat: no-repeat;
-    &__zigzag {
-        height: 0.6em;
-        display: none;
-        margin: 0 2rem;
-
-        @include mq(medium) {
-            display: inline-block;
-        }
-    }
-
-    &__title {
-        text-align: center;
-        text-transform: uppercase;
-        margin: 3rem 2rem 0 2rem;
-        font-size: 2.8rem;
-        order: -2;
-        width: 100%;
-
-        &::before {
-            content: '';
-            height: 5rem;
-            display: block;
-            background-image: url('/svg/zigzag.svg');
-            background-repeat: no-repeat;
-            background-size: 12rem;
-            background-position: center;
-
-            @include mq(medium) {
-                display: none;
-            }
-        }
-
-        &::after {
-            content: '';
-            height: 5rem;
-            display: block;
-            background-image: url('/svg/zigzag.svg');
-            background-repeat: no-repeat;
-            background-size: 12rem;
-            background-position: center;
-
-            @include mq(medium) {
-                display: none;
-            }
-        }
-
-        @include mq(medium) {
-            margin: 2rem auto;
-            height: 100%;
-        }
-
-        @include mq(large) {
-            font-size: 3.6rem;
-        }
-    }
-
-    &__info {
-
-        text-align: justify;
-        margin: 0 auto 2rem auto;
-        width: 80vw;
-
-        &-span {
-            display: block;
-            margin-top: 1rem;
-            color: #000;
-        }
-
-        @include mq(medium) {
-            width: 48%;
-            margin: 0 3rem;
-        }
-
-        @include mq(large) {
-            width: 40%;
-            margin: 0 auto;
-            font-size: 1.8rem;
-            line-height: 2rem;
-        }
-
-        @include mq(large) {
-            width: 40%;
-            margin: 0 auto;
-            font-size: 2rem;
-            line-height: 2.4rem;
-        }
-    }
-
-    &__img {
-        width: 100vw;
-        order: -1;
-        max-width: 570px;
-
-        @include mq(small) {
-            display: block;
-            margin: 0 auto;
-        }
-
-        @include mq(medium) {
-            width: 40vw;
-            flex: none;
-            max-width: 540px;
-
-        }
-
-        @include mq(large) {
-            width: 45vw;
-            flex: none;
-
-        }
-    }
-}
-
-
-.track {
-    @include mq(medium) {
-        background-image: url('/svg/dots-light.svg');
-        background-repeat: no-repeat;
-        background-position-x: 15rem;
-        background-position-y: 3rem;
-        background-size: 15%;
-    }
-
-    @include mq(large) {
-        background-size: 12%;
-        background-position-x: 18rem;
-    }
-
-    @include mq(xlarge) {
-        background-size: 8%;
-        background-position-x: 30rem;
-    }
-
-
-    &__title {
-        text-align: center;
-        margin: 3rem 2rem;
-        font-size: 3.2rem;
-        font-weight: 700;
-
-        @include mq(medium) {
-            text-align: left;
-            margin-left: 20vw;
-            margin-bottom: 1rem;
-            margin-top: 5rem;
-        }
-
-        @include mq(large) {
-            font-size: 3.6rem;
-        }
-    }
-
-    &__input {
-        border-radius: 50px 0 0 50px;
-        width: 15rem;
-        margin-bottom: 10rem;
-
-        @include mq(medium) {
-            width: 25rem;
-            padding: 1.6em;
-            font-size: 1.2rem;
-            margin-left: 20vw;
-        }
-
-        @include mq(large) {
-            width: 35rem;
-            font-size: 1.6rem;
-        }
-    }
-
-    &__button {
-        padding: 1.2em;
-        color: #fff;
-        background-color: #000;
-        border-radius: 0 50px 50px 0;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-        margin-bottom: 10rem;
-
-        @include mq(medium) {
-            width: 10rem;
-            padding: 1.6em;
-            font-size: 1.2rem;
-        }
-
-        @include mq(large) {
-            width: 15rem;
-            font-size: 1.6rem;
-
-        }
-    }
-}
-
-
 .contact {
+    position: relative;
+    background-color: $dark-color;
+    color: #fff;
+    margin-top: 6vh;
 
     &__wrap {
         display: flex;
@@ -223,11 +18,6 @@
         font-size: 1.8rem;
         padding: 1rem;
 
-        &:focus {
-            outline: 2px solid $main-color;
-            box-shadow: 10px;
-        }
-
         @include mq(small) {
             width: 40%;
             margin: auto 2rem;
@@ -241,12 +31,6 @@
             line-height: 2.6rem;
             margin-top: 2rem;
             margin: 2rem 3rem;
-
-            &:focus {
-                outline: 2px solid $main-color;
-                box-shadow: 10px;
-            }
-
         }
     }
 
@@ -261,12 +45,10 @@
         &-wrap {
             width: 65%;
         }
-
-
     }
 
     &__title {
-        margin: 3rem auto;
+        margin: 3rem 5rem;
     }
 
     &__phone {
@@ -283,12 +65,18 @@
 
     &__submit {
         padding: 0.8em;
-        color: #fff;
-        border: 1px solid #000;
-        color: #fff;
-        background-color: #000;
+        border: 1px solid $light-grey;
+        color: $light-grey;
+        background-color: transparent;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
         border-radius: 20px;
+
+        &:hover {
+            background-color: $secondary-color;
+            color: $dark-color;
+            border: 1px solid $dark-color;
+
+        }
 
         @include mq(medium) {
             width: 10rem;
@@ -305,10 +93,9 @@
 }
 
 .copyright {
-    position: fixed;
+    position: absolute;
     color: #fff;
     bottom: 0;
-    background-color: #000;
     width: 100vw;
     font-size: 1.2rem;
     text-align: center;

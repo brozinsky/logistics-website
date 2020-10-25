@@ -1,0 +1,67 @@
+.about {
+    &__wrap {
+        @include mq(medium) {
+            @include flex(center, center, row);
+            flex-wrap: wrap;
+            width: 80vw;
+            margin: 0 auto;
+        }
+
+        @include mq(large) {
+            width: 80vw;
+        }
+    }
+
+    &__info {
+        text-align: justify;
+        margin: 0 auto 2rem auto;
+        width: 80vw;
+
+        &-span {
+            display: block;
+            margin-top: 1rem;
+            color: #000;
+        }
+
+        @include mq(medium) {
+            width: 48%;
+            margin: 0 3rem;
+        }
+
+        @include mq(large) {
+            width: 40%;
+            margin: 0 auto;
+            font-size: 1.8rem;
+            line-height: 2rem;
+        }
+
+        @include mq(large) {
+            width: 40%;
+            margin: 0 auto;
+            font-size: 2rem;
+            line-height: 2.4rem;
+        }
+    }
+
+    &__img {
+        width: 100vw;
+        order: -1;
+        max-width: 570px;
+
+        @include mq(small) {
+            display: block;
+            margin: 0 auto;
+        }
+
+        @include mq(medium) {
+            width: 40vw;
+            flex: none;
+            max-width: 540px;
+        }
+
+        @include mq(large) {
+            width: 45vw;
+            flex: none;
+        }
+    }
+}

@@ -43,6 +43,12 @@ textarea {
     border: none;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     padding: 1.2em;
+    background-color: $light-grey;
+
+    &:focus {
+        outline: 4px solid $secondary-color;
+        box-shadow: 10px;
+    }
 }
 
 textarea {
@@ -56,4 +62,22 @@ strong {
 
 .fa-check {
     color: $main-color;
+}
+
+.section__title {
+    margin: 6vh 0 3.4rem 0;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #000;
+    width: 100vw;
+    line-height: 1.2em;
+    font-size: 3.6em;
+}
+
+.section__subtitle {
+    margin: 0 0 5rem 0;
+    text-align: center;
+    font-size: 2.6em;
 }
