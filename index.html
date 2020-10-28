@@ -14,20 +14,24 @@
 </head>
 
 <body>
-    <nav class="menu">
-        <a href="#" class="menu__item">Home</a>
-        <a href="#about" class="menu__item">About</a>
-        <a href="#services" class="menu__item">Services</a>
-        <a href="#offer" class="menu__item">Offer</a>
-        <a href="#contact" class="menu__item">Contact</a>
+    <nav>
+        <!-- <input class="header__burger-checkbox" type="checkbox" name=""> -->
+        <ul class="menu">
+            <li class="menu__item"><a href="#">Home</a></li>
+            <li class="menu__item"><a href="#about">About</a></li>
+            <li class="menu__item"><a href="#services">Services</a></li>
+            <li class="menu__item"><a href="#offer">Offer</a></li>
+            <li class="menu__item"><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger-menu">
+            <span class="burger"></span>
+        </div>
     </nav>
     <header class="header">
         <h1 class="header__title">Mercury delivery <img class="header__title-logo" src="/img/mercury-red.png"
                 alt="Mercury Delivery logo"></h1>
         <h2 class="header__info">we are a <span class="header__span">logistics</span> company</h2>
-        <a href="#" class="header__burger-menu">
-            <div class="header__burger"></div>
-        </a>
+
         <div class="header__truck">
             <img src="/svg/truck-red.svg" alt="truck" class="header__truck--img">
         </div>
@@ -44,24 +48,25 @@
     <section id="about" class="about">
         <h2 class="section__title"><img src="/svg/zigzag.svg" alt=""> About us <img src="/svg/zigzag.svg" alt=""></h2>
         <div class="about__wrap">
-        <p class="about__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deleniti
-            reprehenderit animi est eaque corporis! Nisi, asperiores nam amet doloribus, soluta ut reiciendis.
-            Consequatur modi rem, vero eos ipsam voluptas.
-            <span class="about__info-span">
-                Error minus sint nobis dolor laborum architecto, quaerat. Voluptatum porro expedita labore esse
-                velit
-                veniam laborum quo obcaecati similique iusto delectus quasi!</span>
-        </p>
-        <img src="/img/box.png" alt="" class="about__img">
-    </div>
+            <p class="about__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deleniti
+                reprehenderit animi est eaque corporis! Nisi, asperiores nam amet doloribus, soluta ut reiciendis.
+                Consequatur modi rem, vero eos ipsam voluptas.
+                <span class="about__info-span">
+                    Error minus sint nobis dolor laborum architecto, quaerat. Voluptatum porro expedita labore esse
+                    velit
+                    veniam laborum quo obcaecati similique iusto delectus quasi!</span>
+            </p>
+            <img src="/img/box.png" alt="" class="about__img">
+        </div>
     </section>
     <section id="services" class="services">
-        <h2 class="section__title"><img src="/svg/zigzag.svg" alt=""> Our services <img src="/svg/zigzag.svg" alt=""></h2>
-                <h3 class="section__subtitle">Fast and reliable services
-                    <span class="services__title-slim">
-                        that meet your timeline and budget
-                    </span>
-                </h3>
+        <h2 class="section__title"><img src="/svg/zigzag.svg" alt=""> Our services <img src="/svg/zigzag.svg" alt="">
+        </h2>
+        <h3 class="section__subtitle">Fast and reliable services
+            <span class="services__title-slim">
+                that meet your timeline and budget
+            </span>
+        </h3>
         <div class="feature__wrap">
             <div class="feature">
                 <i class="feature__icon fas fa-warehouse"></i>
@@ -102,11 +107,11 @@
     </section>
     <section id="offer" class="offer">
         <h2 class="section__title"><img src="/svg/zigzag.svg" alt=""> Our offer<img src="/svg/zigzag.svg" alt=""></h2>
-            <h3 class="section__subtitle">We give you
-                <span class="services__title-slim">
-                    the best
-                </span> pricing plan
-            </h3>
+        <h3 class="section__subtitle">We give you
+            <span class="services__title-slim">
+                the best
+            </span> pricing plan
+        </h3>
         <div class="offer__column-wrap">
             <div class="offer__column">
                 <div class="offer__section">
@@ -205,5 +210,9 @@
             Copyright &copy 2020 All rights reserved
         </small>
     </footer>
+    <script src="    https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js
+    "></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
