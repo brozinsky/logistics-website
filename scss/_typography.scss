@@ -69,7 +69,7 @@ strong {
 }
 
 .section__title {
-    margin: 6vh 0 3.4rem 0;
+    margin: 0 0 3.4rem 0;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -78,10 +78,32 @@ strong {
     width: 100vw;
     line-height: 1.2em;
     font-size: 3.6em;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+
+    @include mq(small) {
+        flex-direction: row;
+        height: 100%;
+    }
+
+    &-span {
+        margin: 2rem auto;
+        color: #000;
+
+        @include mq(small) {
+            margin: auto 2rem;
+        }
+    }
 }
 
 .section__subtitle {
     margin: 0 0 5rem 0;
     text-align: center;
     font-size: 2.6em;
+    margin: 0 auto 5rem auto;
+    width: 80vw;
 }

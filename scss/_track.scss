@@ -2,6 +2,13 @@
     margin: 3rem 0 0 0;
     position: relative;
 
+    &__form-wrap {
+        margin: 5rem auto;
+        width: 65vw;
+        display: flex;
+        justify-content: center;
+    }
+
     &::before {
         content: '';
         position: absolute;
@@ -26,22 +33,26 @@
         z-index: -1;
     }
 
-    @include mq(medium) {
-        background-image: url('/svg/dots-light.svg');
+    @include mq(small) {
+        background-image: url('/svg/dots-secondary.svg');
         background-repeat: no-repeat;
         background-position-x: 15rem;
-        background-position-y: 3rem;
-        background-size: 15%;
+        background-position-y: 7rem;
+        background-size: 10rem;
+    }
+
+    @include mq(medium) {
+        background-size: 13rem;
     }
 
     @include mq(large) {
-        background-size: 12%;
+        background-size: 15rem;
         background-position-x: 18rem;
     }
 
     @include mq(xlarge) {
-        background-size: 8%;
-        background-position-x: 30rem;
+        background-size: 20rem;
+        background-position-x: 25rem;
     }
 
 
@@ -65,18 +76,15 @@
 
     &__input {
         border-radius: 50px 0 0 50px;
-        width: 15rem;
+        font-size: 1.6rem;
+        width: 30rem;
 
-        @include mq(medium) {
-            width: 25rem;
-            padding: 1.6em;
-            font-size: 1.2rem;
-            margin-left: 40vw;
+        &:focus {
+            outline: none;
         }
 
-        @include mq(large) {
-            width: 35rem;
-            font-size: 1.6rem;
+        @include mq(medium) {
+            width: 40rem;
         }
     }
 
@@ -86,18 +94,10 @@
         background-color: #000;
         border-radius: 0 50px 50px 0;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-        margin-bottom: 10rem;
+        font-size: 1.6rem;
 
         @include mq(medium) {
             width: 10rem;
-            padding: 1.6em;
-            font-size: 1.2rem;
-        }
-
-        @include mq(large) {
-            width: 15rem;
-            font-size: 1.6rem;
-
         }
     }
 }

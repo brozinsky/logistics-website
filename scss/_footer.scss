@@ -7,20 +7,35 @@
     &__wrap {
         display: flex;
         flex-wrap: wrap;
-        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 100vw;
         position: relative;
-        height: 400px;
+        // height: 400px;
         flex-basis: 25%;
         margin: 2rem auto;
+
+        @include mq(medium) {
+            flex-direction: row;
+            align-items: flex-start;
+
+        }
+
     }
 
     &__container {
+        box-sizing: border-box;
         font-size: 1.8rem;
         padding: 1rem;
+        min-width: 90%;
+        margin-top: 2rem;
 
-        @include mq(small) {
-            width: 40%;
-            margin: auto 2rem;
+        @include mq(small) {}
+
+        @include mq(large) {
+            margin: 0 auto;
+            min-width: 40%;
         }
 
         &-message {
@@ -48,7 +63,12 @@
     }
 
     &__title {
-        margin: 3rem 5rem;
+        margin: 5rem 5rem;
+        font-size: 2.8rem;
+
+        @include mq(medium) {
+            margin: 3rem 5rem;
+        }
     }
 
     &__phone {
@@ -56,10 +76,16 @@
     }
 
     &__address {
-        margin: 2rem auto 0 auto;
+        margin: 0 auto 0 auto;
+
+        &-title {
+            font-size: 2.8rem;
+            margin: 3rem auto 0 auto;
+        }
 
         &-info {
             margin: 1.4rem auto;
+            padding: 1rem;
         }
     }
 
@@ -70,23 +96,24 @@
         background-color: transparent;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
         border-radius: 20px;
+        height: 4.5rem;
+        width: 15rem;
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
 
         &:hover {
             background-color: $secondary-color;
             color: $dark-color;
             border: 1px solid $dark-color;
-
         }
 
         @include mq(medium) {
             width: 10rem;
             padding: 0.8em;
-            font-size: 1.2rem;
         }
 
         @include mq(large) {
             width: 15rem;
-            font-size: 1.6rem;
         }
 
     }

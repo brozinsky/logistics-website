@@ -26,14 +26,18 @@ body {
 
     &__btn-text {
         color: #fff;
-        font-size: 2.2rem;
+        font-size: 1.8rem;
         letter-spacing: 0.2rem;
+
+        @include mq(large) {
+            font-size: 2.2rem;
+        }
     }
 
     &__button {
         background-color: $main-color;
-        height: 110px;
-        width: 110px;
+        height: 12rem;
+        width: 12rem;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
         border: none;
         transition: 0.5s;
@@ -49,9 +53,10 @@ body {
             box-shadow: 0 -5px -10px rgba(0, 0, 0, 0.5);
         }
 
-        @include mq(xlarge) {
-            width: 300px;
-            height: 100px;
+
+        @include mq(large) {
+            width: 30rem;
+            height: 10rem;
         }
     }
 

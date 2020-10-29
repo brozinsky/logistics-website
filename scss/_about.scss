@@ -1,4 +1,6 @@
 .about {
+    margin-bottom: 0;
+
     &__wrap {
         @include mq(medium) {
             @include flex(center, center, row);
@@ -8,7 +10,11 @@
         }
 
         @include mq(large) {
-            width: 80vw;
+            width: 85vw;
+        }
+
+        @include mq(xlarge) {
+            width: 83vw;
         }
     }
 
@@ -24,22 +30,20 @@
         }
 
         @include mq(medium) {
-            width: 48%;
+            width: 40%;
             margin: 0 3rem;
         }
 
         @include mq(large) {
             width: 40%;
-            margin: 0 auto;
-            font-size: 1.8rem;
-            line-height: 2rem;
+            font-size: 1.6em;
+            line-height: 2.2rem;
         }
 
-        @include mq(large) {
-            width: 40%;
-            margin: 0 auto;
+        @include mq(xlarge) {
+            width: 35%;
             font-size: 2rem;
-            line-height: 2.4rem;
+            line-height: 3rem;
         }
     }
 
@@ -54,14 +58,12 @@
         }
 
         @include mq(medium) {
+            margin: 0;
             width: 40vw;
-            flex: none;
-            max-width: 540px;
         }
 
-        @include mq(large) {
-            width: 45vw;
-            flex: none;
+        @include mq(xlarge) {
+            margin: 0 3rem;
         }
     }
 }
