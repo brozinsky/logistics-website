@@ -34,7 +34,7 @@
     }
 
     @include mq(small) {
-        background-image: url('/svg/dots-secondary.svg');
+        background-image: url('./svg/dots-secondary.svg');
         background-repeat: no-repeat;
         background-position-x: 15rem;
         background-position-y: 7rem;
