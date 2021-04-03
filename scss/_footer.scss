@@ -123,9 +123,10 @@
     position: absolute;
     color: #fff;
     bottom: 0;
-    width: 100vw;
+    width: 98vw;
     font-size: 1.2rem;
     text-align: center;
     z-index: 1;
     padding: 0.3rem;
+    overflow: hidden;
 }

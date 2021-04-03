@@ -586,6 +586,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow-x: hidden;
 }
 
 .menu {
@@ -1094,7 +1095,7 @@ body {
       grid-template-rows: 27% 10% 10% 43% 10%;
   height: 100vh;
   width: 100vw;
-  background-image: url(/svg/dots-light.svg);
+  background-image: url("./svg/dots-light.svg");
   background-repeat: no-repeat;
   background-position: 75vw 70vh;
 }
@@ -1650,7 +1651,7 @@ body {
 
 @media (min-width: 576px) {
   .track {
-    background-image: url("/svg/dots-secondary.svg");
+    background-image: url("./svg/dots-secondary.svg");
     background-repeat: no-repeat;
     background-position-x: 15rem;
     background-position-y: 7rem;
@@ -1733,7 +1734,7 @@ body {
 }
 
 .services {
-  background-image: url(/svg/section-bcg-1.svg);
+  background-image: url("./svg/section-bcg-1.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: 10vh;
@@ -1834,6 +1835,12 @@ body {
   border-radius: 10px;
 }
 
+@media (min-width: 576px) {
+  .offer__section {
+    width: 500px;
+  }
+}
+
 .offer__heading {
   height: 20%;
   width: 100%;
@@ -1890,7 +1897,7 @@ body {
 }
 
 .offer__column {
-  width: 33rem;
+  width: 28rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1931,7 +1938,6 @@ body {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 70vw;
   margin: 0 auto;
 }
 
@@ -2166,10 +2172,11 @@ body {
   position: absolute;
   color: #fff;
   bottom: 0;
-  width: 100vw;
+  width: 98vw;
   font-size: 1.2rem;
   text-align: center;
   z-index: 1;
   padding: 0.3rem;
+  overflow: hidden;
 }
 /*# sourceMappingURL=main.css.map */
