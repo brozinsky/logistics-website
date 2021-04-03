@@ -1095,7 +1095,7 @@ body {
       grid-template-rows: 27% 10% 10% 43% 10%;
   height: 100vh;
   width: 100vw;
-  background-image: url("./svg/dots-light.svg");
+  background-image: url("../svg/dots-light.svg");
   background-repeat: no-repeat;
   background-position: 75vw 70vh;
 }
@@ -1651,7 +1651,7 @@ body {
 
 @media (min-width: 576px) {
   .track {
-    background-image: url("./svg/dots-secondary.svg");
+    background-image: url("../svg/dots-secondary.svg");
     background-repeat: no-repeat;
     background-position-x: 15rem;
     background-position-y: 7rem;
@@ -1734,7 +1734,7 @@ body {
 }
 
 .services {
-  background-image: url("./svg/section-bcg-1.svg");
+  background-image: url("../svg/section-bcg-1.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: 10vh;
@@ -1846,7 +1846,7 @@ body {
   width: 100%;
   background-color: #F4F4F4;
   text-align: center;
-  color: #0f1014;
+  color: #262627;
   text-transform: uppercase;
   font-size: 3rem;
   font-weight: 300;
@@ -1856,7 +1856,7 @@ body {
 .offer__price {
   text-align: center;
   background-color: #F4F4F4;
-  color: #0f1014;
+  color: #262627;
   font-size: 4rem;
   font-weight: 600;
   padding: 2rem 0;
@@ -1864,7 +1864,7 @@ body {
 
 .offer__price-month {
   font-size: 1.8rem;
-  color: #0f1014;
+  color: #262627;
   font-weight: 300;
 }
 
@@ -1893,7 +1893,7 @@ body {
 .offer__item {
   margin: auto 5rem;
   padding: 1.2rem;
-  border-top: 1px solid #bcbfcc;
+  border-top: 1px solid #d9d9d9;
 }
 
 .offer__column {
@@ -2008,7 +2008,7 @@ body {
 
 .contact {
   position: relative;
-  background-color: #0f1014;
+  background-color: #262627;
   color: #fff;
   margin-top: 6vh;
 }
@@ -2151,8 +2151,8 @@ body {
 
 .contact__submit:hover {
   background-color: #FFCC00;
-  color: #0f1014;
-  border: 1px solid #0f1014;
+  color: #262627;
+  border: 1px solid #262627;
 }
 
 @media (min-width: 768px) {
