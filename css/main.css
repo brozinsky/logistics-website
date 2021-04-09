@@ -1159,11 +1159,12 @@ body {
   }
 }
 
-.header__title {
+.header__title-container {
   font-size: 3.4rem;
+  height: 12rem;
+  line-height: 16rem;
   width: 100%;
   letter-spacing: 0.0rem;
-  text-align: center;
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
@@ -1171,9 +1172,10 @@ body {
       grid-row-start: 2;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  position: relative;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+  text-align: center;
+  position: relative;
   -webkit-animation-name: clip-text;
           animation-name: clip-text;
   -webkit-animation-delay: 0s;
@@ -1286,7 +1288,7 @@ body {
   .header__title-logo {
     -webkit-transform: translate(-45%, -25%);
             transform: translate(-45%, -25%);
-    height: 12rem;
+    height: 11rem;
   }
 }
 

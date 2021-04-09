@@ -61,23 +61,30 @@ body {
     }
 
     &__title {
-        font-size: 3.4rem;
-        width: 100%;
-        letter-spacing: 0.0rem;
-        text-align: center;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        box-sizing: border-box;
-        position: relative;
-        transform: translate(0, 0);
 
-        animation-name: clip-text;
-        animation-delay: 0s;
-        animation-iteration-count: 1;
-        animation-duration: 800ms;
-        animation-fill-mode: both;
-        animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+
+        &-container{
+            font-size: 3.4rem;
+            height: 12rem;
+            line-height: 16rem;
+            width: 100%;
+            letter-spacing: 0.0rem;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            box-sizing: border-box;
+            transform: translate(0, 0);
+
+            text-align: center;
+            position: relative;
+            animation-name: clip-text;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-duration: 800ms;
+            animation-fill-mode: both;
+            animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+
+        }
 
         &::after {
             content: "";
@@ -160,7 +167,7 @@ body {
 
             &-logo {
                 transform: translate(-45%, -25%);
-                height: 12rem;
+                height: 11rem;
             }
         }
     }
