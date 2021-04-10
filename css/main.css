@@ -995,6 +995,13 @@ footer {
 }
 
 @media (min-width: 768px) {
+  .menu--open {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@media (min-width: 768px) {
   .menu {
     left: 0;
     -webkit-box-orient: horizontal;
@@ -1050,10 +1057,6 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .menu__item--sticky {
-    color: #FFE680;
-    opacity: 0.7;
-  }
   .menu__item--sticky::after {
     content: '';
     position: absolute;
@@ -1077,7 +1080,10 @@ footer {
 
 @media (min-width: 768px) {
   .menu--sticky {
-    background-color: #a2040d;
+    background-color: #FFE680;
+    -webkit-box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.2);
+    opacity: 0.95;
   }
 }
 

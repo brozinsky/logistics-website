@@ -1,11 +1,12 @@
 //Animations
 
 const headerArrow = document.querySelector('.scroll')
+const headerSwipe = document.querySelector('.mobile-swipe')
 const sections = document.querySelectorAll('section')
 
 //header scroll arrow animation
-gsap.from(headerArrow, 2, { delay: 1.4, opacity: 0, })
-gsap.from(headerArrow, 1.5, { delay: 0, y: '-20px', repeat: -1, yoyo: true, ease: "slow(0.7, 0.7, false)", });
+gsap.from(headerArrow && headerSwipe, 2, { delay: 1.4, opacity: 0, })
+gsap.from(headerArrow && headerSwipe, 1.5, { delay: 0, y: '-20px', repeat: -1, yoyo: true, ease: "slow(0.7, 0.7, false)", });
 
 
 //all sections animation

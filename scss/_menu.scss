@@ -72,6 +72,9 @@
 
     &--open {
         transform: translateX(-100%);
+        @include mq(medium) {
+            transform: translateX(0);
+        }
       }
 
 
@@ -122,8 +125,7 @@
 
         &--sticky {
             @include mq(medium) {
-                color: $light-color;
-                opacity: 0.7;
+                // opacity: 0.7;
 
                 &::after {
                     content: '';
@@ -151,7 +153,9 @@
 
     &--sticky {
         @include mq(medium) {
-            background-color: darken($main-color, 10%);
+            background-color: $light-color;
+            box-shadow: 0 4px 4px 2px rgba(0,0,0,.2);
+            opacity: 0.95;
         }
     }
 }
